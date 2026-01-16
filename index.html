@@ -74,12 +74,277 @@
 </section>
 
 <!-- SECCIÓN NEW IN-->
- <section id="new-in" class="shop reveal">
-    <h2>NEW IN</h2>
-
-    <div class="products-grid">
-        <!-- Aquí luego pondremos productos nuevos -->
+<section id="new-in" class="shop reveal">
+    <div class="new-in-header">
+        <h2>NEW IN</h2>
+        <p>Las últimas tendencias y diseños exclusivos que acaban de llegar 💫</p>
+        <div class="new-in-stats">
+            <div class="stat-item">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Nuevos productos</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">85%</span>
+                <span class="stat-label">Agotados en 24h</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">⭐</span>
+                <span class="stat-label">Calificación 4.9/5</span>
+            </div>
+        </div>
     </div>
+
+    <div class="products-grid new-in-grid">
+
+        <div class="product-card featured" data-category="tops">
+            <div class="product-image-container">
+                <img src="assets/products/dress1.jpg" alt="Top Asimétrico Premium" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Top Asimétrico Premium', 'Diseño exclusivo con corte asimétrico y tela premium. Perfecto para ocasiones especiales con un toque moderno.', '89.90', 'assets/products/dress1.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge new">Nuevo</div>
+                <div class="product-badge featured">Destacado</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">Tops Premium</div>
+                <h3 class="product-name">Top Asimétrico Premium</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(47)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 89.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #dc2626;"></span>
+                    <span class="color-option" style="background: #7c3aed;"></span>
+                    <span class="color-option" style="background: #059669;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Top Asimétrico Premium"
+                        data-price="89.90"
+                        data-img="assets/products/dress1.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="dresses">
+            <div class="product-image-container">
+                <img src="assets/products/top1.jpg" alt="Vestido Midi Elegante" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Vestido Midi Elegante', 'Vestido midi con diseño elegante y versátil. Ideal para el día a día o eventos formales.', '129.90', 'assets/products/top1.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge new">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">Vestidos</div>
+                <h3 class="product-name">Vestido Midi Elegante</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(23)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 129.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #f59e0b;"></span>
+                    <span class="color-option" style="background: #ec4899;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Vestido Midi Elegante"
+                        data-price="129.90"
+                        data-img="assets/products/top1.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="bottoms">
+            <div class="product-image-container">
+                <img src="assets/products/skirt1.jpg" alt="Pantalón Cargo Moderno" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Pantalón Cargo Moderno', 'Pantalón cargo con diseño moderno y múltiples bolsillos. Cómodo y con estilo urbano.', '99.90', 'assets/products/skirt1.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge new">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">Bottoms</div>
+                <h3 class="product-name">Pantalón Cargo Moderno</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★☆</span>
+                    <span class="rating-count">(31)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 99.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                    <span class="color-option" style="background: #6b7280;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Pantalón Cargo Moderno"
+                        data-price="99.90"
+                        data-img="assets/products/skirt1.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="tops">
+            <div class="product-image-container">
+                <img src="assets/products/pants1.jpg" alt="Blusa Oversize Trendy" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Blusa Oversize Trendy', 'Blusa oversize con diseño trendy y cómodo. Perfecta para un look casual y moderno.', '79.90', 'assets/products/pants1.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge new">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">Tops</div>
+                <h3 class="product-name">Blusa Oversize Trendy</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(19)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 79.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #fff; border: 1px solid #ddd;"></span>
+                    <span class="color-option" style="background: #000;"></span>
+                    <span class="color-option" style="background: #3b82f6;"></span>
+                    <span class="color-option" style="background: #10b981;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Blusa Oversize Trendy"
+                        data-price="79.90"
+                        data-img="assets/products/pants1.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="outerwear">
+            <div class="product-image-container">
+                <img src="assets/products/Top asimétrico.png" alt="Chaqueta Denim Vintage" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Chaqueta Denim Vintage', 'Chaqueta denim con estilo vintage y detalles únicos. Una pieza esencial para tu guardarropa.', '149.90', 'assets/products/Top asimétrico.png')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge new">Nuevo</div>
+                <div class="product-badge limited">Edición Limitada</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">Abrigos</div>
+                <h3 class="product-name">Chaqueta Denim Vintage</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-count">(38)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 149.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #1e40af;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                    <span class="color-option" style="background: #6b7280;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Chaqueta Denim Vintage"
+                        data-price="149.90"
+                        data-img="assets/products/Top asimétrico.png">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="bottoms">
+            <div class="product-image-container">
+                <img src="assets/products/1.jpg" alt="Shorts de Jean Premium" class="product-image">
+                <div class="product-overlay">
+                    <button class="quick-view-btn" onclick="openQuickView('Shorts de Jean Premium', 'Shorts de jean premium con corte perfecto. Cómodos y con estilo para el verano.', '69.90', 'assets/products/1.jpg')">
+                        👁️ Vista rápida
+                    </button>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        ❤️
+                    </button>
+                </div>
+                <div class="product-badge new">Nuevo</div>
+            </div>
+            <div class="product-info">
+                <div class="product-category">Bottoms</div>
+                <h3 class="product-name">Shorts de Jean Premium</h3>
+                <div class="product-rating">
+                    <span class="stars">★★★★☆</span>
+                    <span class="rating-count">(27)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">S/ 69.90</span>
+                </div>
+                <div class="product-colors">
+                    <span class="color-option" style="background: #1e40af;"></span>
+                    <span class="color-option" style="background: #374151;"></span>
+                    <span class="color-option" style="background: #6b7280;"></span>
+                </div>
+                <button class="btn add-to-cart"
+                        data-name="Shorts de Jean Premium"
+                        data-price="69.90"
+                        data-img="assets/products/1.jpg">
+                    <span class="btn-icon">🛒</span>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- NEWSLETTER CTA -->
+    <div class="new-in-cta">
+        <div class="cta-content">
+            <h3>¿Quieres ser la primera en enterarte de nuestros lanzamientos?</h3>
+            <p>Suscríbete a nuestro newsletter y recibe ofertas exclusivas 💌</p>
+            <div class="cta-form">
+                <input type="email" placeholder="Tu correo electrónico" id="newsletterEmail">
+                <button onclick="subscribeNewsletter()" class="btn-primary">
+                    <span class="btn-icon">📧</span>
+                    Suscribirme
+                </button>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 
@@ -1002,19 +1267,63 @@
         <span class="modal-close" id="closeCart">&times;</span>
 
         <div class="cart-header">
-            <div class="cart-icon">🛒</div>
-            <h2>Tu carrito</h2>
-            <p id="cartCount">0 productos</p>
+            <div class="cart-icon-large">🛒</div>
+            <div class="cart-title-section">
+                <h2>Tu carrito de compras</h2>
+                <p id="cartCount">0 productos</p>
+            </div>
         </div>
 
         <div class="cart-content">
             <div class="cart-items" id="cartItems">
                 <!-- JS insertará productos aquí -->
                 <div class="empty-cart">
-                    <div class="empty-cart-icon">🛍️</div>
+                    <div class="empty-cart-animation">
+                        <div class="empty-cart-icon">🛍️</div>
+                        <div class="empty-cart-bounce"></div>
+                    </div>
                     <h3>Tu carrito está vacío</h3>
                     <p>¡Descubre nuestras prendas y comienza a comprar!</p>
-                    <button onclick="document.getElementById('cartModal').classList.remove('show'); scrollToShop();" class="btn-primary">Ver productos</button>
+                    <button onclick="document.getElementById('cartModal').classList.remove('show'); scrollToShop();" class="btn-primary">
+                        <span class="btn-icon">🛍️</span>
+                        Explorar productos
+                    </button>
+                </div>
+            </div>
+
+            <!-- CART SUMMARY -->
+            <div class="cart-summary-section" id="cartSummary" style="display: none;">
+                <div class="cart-summary-header">
+                    <h4>Resumen del pedido</h4>
+                </div>
+
+                <div class="cart-summary-row">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">S/ 0.00</span>
+                </div>
+
+                <div class="cart-summary-row">
+                    <span>Envío</span>
+                    <span id="cartShipping">Gratis</span>
+                </div>
+
+                <div class="cart-summary-row total-row">
+                    <span><strong>Total</strong></span>
+                    <span id="cartTotal"><strong>S/ 0.00</strong></span>
+                </div>
+
+                <div class="free-shipping-notice" id="freeShippingNotice">
+                    <span class="shipping-icon">🚚</span>
+                    <span>¡Envío gratis por compras mayores a S/149!</span>
+                </div>
+
+                <!-- DISCOUNT CODE -->
+                <div class="discount-section">
+                    <div class="discount-input-group">
+                        <input type="text" id="discountCode" placeholder="Código de descuento" maxlength="20">
+                        <button onclick="applyDiscount()" class="btn-discount">Aplicar</button>
+                    </div>
+                    <div id="discountMessage" class="discount-message"></div>
                 </div>
             </div>
 
@@ -1034,15 +1343,8 @@
         </div>
 
         <div class="cart-footer">
-            <div class="cart-summary">
-                <div class="cart-total">
-                    <p>Total</p>
-                    <span id="cartTotal">S/ 0.00</span>
-                </div>
-            </div>
-
             <div class="cart-actions">
-                <button id="checkoutBtn" class="btn-primary checkout-btn">
+                <button id="checkoutBtn" class="btn-primary checkout-btn" style="display: none;">
                     <span class="btn-icon">💬</span>
                     Finalizar pedido por WhatsApp
                 </button>
@@ -1050,10 +1352,15 @@
                     <span class="btn-icon">🛍️</span>
                     Seguir comprando
                 </button>
+                <button onclick="clearCart()" class="btn-clear-cart" style="display: none;">
+                    <span class="btn-icon">🗑️</span>
+                    Vaciar carrito
+                </button>
             </div>
 
             <div class="cart-note">
                 <p>Tu pedido será confirmado por WhatsApp 💬</p>
+                <p class="cart-security">🔒 Pago seguro con Mercado Pago</p>
             </div>
         </div>
 
