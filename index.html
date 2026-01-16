@@ -57,10 +57,114 @@
 
     <!-- Hero / Banner -->
     <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+
         <div class="container hero-content">
-            <h1>Bienvenida a Samma.hub</h1>
-            <p>Descubre moda femenina con estilo y actitud 💖</p>
-            <button onclick="scrollToShop()">Ver productos</button>
+            <div class="hero-main">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-icon">✨</span>
+                        Nueva colección primavera 2024
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="title-line">Bienvenida a</span>
+                        <span class="title-brand">Samma.hub</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Descubre moda femenina con estilo y actitud.
+                        <span class="highlight">Prendas únicas</span> que expresan tu personalidad 💖
+                    </p>
+
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">🚚</span>
+                            <span>Envío gratis desde S/149</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔄</span>
+                            <span>Cambios sin complicaciones</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">⭐</span>
+                            <span>Calidad garantizada</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button onclick="scrollToShop()" class="btn-primary hero-cta">
+                            <span class="btn-icon">🛍️</span>
+                            Explorar colección
+                        </button>
+                        <button onclick="document.getElementById('new-in').scrollIntoView({behavior: 'smooth'})" class="btn-outline hero-secondary">
+                            <span class="btn-icon">✨</span>
+                            Ver novedades
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <img src="assets/products/dress1.jpg" alt="Colección Samma.hub" class="hero-image">
+                        <div class="hero-image-overlay">
+                            <div class="image-badge">
+                                <span class="badge-text">Nuevo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Clientes felices</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">4.9</div>
+                            <div class="stat-label">Calificación</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Tiendas físicas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="hero-social-proof">
+                <div class="social-proof-text">
+                    <span class="proof-icon">💬</span>
+                    <span>"La mejor experiencia de compra online que he tenido"</span>
+                    <span class="proof-author">- María G., cliente fiel</span>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/samma.hub/" target="_blank" class="social-link">
+                        <span class="social-icon">📷</span>
+                        <span>@samma.hub</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@samma.hub" target="_blank" class="social-link">
+                        <span class="social-icon">🎵</span>
+                        <span>@samma.hub</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-text">Descubre más</div>
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+            </div>
         </div>
     </section>
 
